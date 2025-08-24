@@ -1,0 +1,76 @@
+/* One Dark inspired site-wide dark theme overrides for Ananke */
+:root {
+  --bg: #282c34;
+  --bg-2: #21252b;
+  --card: #2c313c;
+  --text: #abb2bf;
+  --muted: #9da5b4;
+  --heading: #e6e6e6;
+  --border: #3a3f4b;
+  --link: #61AFEF;
+  --link-hover: #56B6C2;
+  --accent-green: #98C379;
+  --accent-orange: #D19A66;
+  --accent-red: #E06C75;
+  --accent-purple: #C678DD;
+  --accent-yellow: #E5C07B;
+  --code-bg: #21252b;
+  --code-text: #e6e6e6;
+}
+
+/* Base */
+html, body { background-color: var(--bg); color: var(--text); }
+body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* Links */
+a { color: var(--link); }
+a:hover, a:focus { color: var(--link-hover); }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 { color: var(--heading); }
+
+/* Common tachyons color utilities overridden for dark mode readability */
+.dark-gray, .mid-gray, .gray, .near-black, .black-80, .black-70 { color: var(--text) !important; }
+.silver, .light-silver, .moon-gray, .light-gray { color: var(--muted) !important; }
+.white, .near-white { color: var(--heading) !important; }
+
+/* Background helpers to dark variants */
+.bg-near-white, .bg-white, .bg-light-gray, .bg-moon-gray { background-color: var(--bg-2) !important; }
+.bg-near-black, .bg-black, .bg-dark-gray { background-color: var(--bg) !important; }
+
+/* Cards, panels, post lists */
+.card, .panel, .ba.bg-white, .shadow-1, .shadow-2, .shadow-3, .shadow-4, .shadow-5,
+.post, .post-card, .mw7.center.bg-white, article.bg-white { background: var(--card) !important; color: var(--text) !important; border-color: var(--border) !important; }
+
+/* Borders */
+.ba, .bt, .br, .bb, .bl { border-color: var(--border) !important; }
+
+/* Site chrome */
+.site-header, header, nav, .site-footer, footer { background: var(--bg-2) !important; color: var(--text) !important; border-color: var(--border) !important; }
+.site-navigation a { color: var(--heading) !important; }
+.site-navigation a:hover { color: var(--link-hover) !important; }
+
+/* Buttons and pagination */
+.button, .btn, .input-reset, .ananke-button, .bg-black-90, .bg-black-80 { background: var(--bg-2) !important; color: var(--heading) !important; border: 1px solid var(--border) !important; }
+.button:hover, .btn:hover, .ananke-button:hover { background: var(--bg) !important; color: var(--link-hover) !important; }
+
+/* Code blocks */
+pre, code, pre code, code pre { background: var(--code-bg) !important; color: var(--code-text) !important; }
+pre { border: 1px solid var(--border); border-radius: 6px; padding: 1rem; overflow-x: auto; }
+code { border-radius: 4px; padding: .2em .35em; }
+
+/* Tables */
+table { border-color: var(--border); }
+th, td { border-color: var(--border); }
+th { color: var(--heading); }
+
+/* Forms */
+input, textarea, select { background: var(--bg-2); color: var(--text); border: 1px solid var(--border); }
+input::placeholder, textarea::placeholder { color: var(--muted); }
+
+/* Misc */
+hr { border-color: var(--border); }
+blockquote { color: var(--muted); border-left: 4px solid var(--border); }
+
+/* Hero overlays to keep text readable */
+.cover, .hero, .page-header { background-color: rgba(0,0,0,0.35); }

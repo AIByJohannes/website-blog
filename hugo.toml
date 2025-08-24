@@ -1,8 +1,21 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://blog.johannes'
 languageCode = 'en-us'
-title = 'Johannes Copeland | Blog'
+title = 'Johannes Copeland'
 
 theme = 'ananke'
 
 # Publish the site into the docs folder (for GitHub Pages)
 publishDir = 'docs'
+
+[params]
+  # Use a dark background and light text via Tachyons utility classes
+  body_classes = 'avenir bg-near-black near-white'
+  # Load our custom dark stylesheet
+  custom_css = ['one-dark.css']
+
+[markup]
+  [markup.highlight]
+    # Use One Dark for code blocks
+    style = 'onedark'
+    # Keep inline styles so no extra CSS is required
+    noClasses = true
