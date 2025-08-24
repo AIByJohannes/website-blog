@@ -1,17 +1,52 @@
-baseURL = 'https://blog.johannes'
+baseURL = 'https://blog.johannescopeland.com/'
 languageCode = 'en-us'
 title = 'Johannes Copeland'
 
+# Use the Ananke theme
 theme = 'ananke'
 
 # Publish the site into the docs folder (for GitHub Pages)
 publishDir = 'docs'
 
+# Pagination (Hugo v0.128+)
+[pagination]
+  pagerSize = 10
+
 [params]
+  # Site description
+  description = 'Personal blog of Johannes Copeland.'
+  # What sections should be considered main content for the homepage recent posts
+  mainSections = ['post']
+  # Number of recent posts on the homepage
+  recent_posts_number = 5
+
   # Use a dark background and light text via Tachyons utility classes
   body_classes = 'avenir bg-near-black near-white'
   # Load our custom dark stylesheet
   custom_css = ['one-dark.css']
+
+  [params.ananke]
+    # Show recent posts on the homepage
+    show_recent_posts = true
+
+# Pretty permalinks for posts
+[permalinks]
+  post = '/:year/:month/:slug/'
+
+# Top navigation menu
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    url = '/'
+    weight = 1
+  [[menus.main]]
+    name = 'Posts'
+    url = '/post/'
+    weight = 10
+  [[menus.main]]
+    name = 'About'
+    url = '/about/'
+    weight = 20
 
 [markup]
   [markup.highlight]
