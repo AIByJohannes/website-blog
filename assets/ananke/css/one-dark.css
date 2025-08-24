@@ -159,7 +159,7 @@ blockquote { color: var(--muted); border-left: 4px solid var(--border); }
   white-space: nowrap;
   animation: 
     typing-delayed 1.5s steps(25, end) 0.5s both,
-    blink-caret 0.75s step-end infinite 0.5s;
+    blink-caret 0.75s step-end 2 0.5s both;
 }
 
 .typewriter-output {
