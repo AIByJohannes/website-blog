@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "Blog"
 description: "Welcome to my personal blog. I write about AI, coding, and things I learn."
 ---
 

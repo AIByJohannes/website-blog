@@ -75,5 +75,125 @@ input::placeholder, textarea::placeholder { color: var(--muted); }
 hr { border-color: var(--border); }
 blockquote { color: var(--muted); border-left: 4px solid var(--border); }
 
+/* Hacker-style terminal and animations */
+.hacker-intro {
+  margin-bottom: 2rem;
+}
+
+.hacker-terminal {
+  background: var(--code-bg);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  font-family: 'Fira Code', monospace;
+}
+
+.terminal-header {
+  background: var(--bg-2);
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+}
+
+.terminal-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.terminal-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.terminal-button.close { background: #ff5f56; }
+.terminal-button.minimize { background: #ffbd2e; }
+.terminal-button.maximize { background: #27ca3f; }
+
+.terminal-title {
+  color: var(--text);
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.terminal-content {
+  padding: 1rem;
+  min-height: 200px;
+}
+
+.terminal-line {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.prompt {
+  color: var(--accent-green);
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.terminal-output {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Typewriter animations */
+.typewriter {
+  overflow: hidden;
+  border-right: 0.15em solid var(--accent-green);
+  white-space: nowrap;
+  animation: 
+    typing 2s steps(20, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+.typewriter-delayed {
+  overflow: hidden;
+  border-right: 0.15em solid var(--accent-green);
+  white-space: nowrap;
+  animation: 
+    typing-delayed 1.5s steps(25, end) 0.5s both,
+    blink-caret 0.75s step-end infinite 0.5s;
+}
+
+.typewriter-output {
+  animation: fade-in 1s ease-in 2.5s both;
+}
+
+.cursor-blink {
+  animation: blink-cursor 1s step-end infinite 4s;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes typing-delayed {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: var(--accent-green); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes blink-cursor {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 /* Hero overlays to keep text readable */
 .cover, .hero, .page-header { background-color: rgba(0,0,0,0.35); }
