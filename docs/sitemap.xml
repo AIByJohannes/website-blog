@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://blog.johannescopeland.com/</loc>
     <lastmod>2025-08-24T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/2025/08/hello-world/</loc>
+    <loc>https://blog.johannescopeland.com/2025/08/hello-world/</loc>
     <lastmod>2025-08-24T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/intro/</loc>
+    <loc>https://blog.johannescopeland.com/tags/intro/</loc>
     <lastmod>2025-08-24T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/meta/</loc>
+    <loc>https://blog.johannescopeland.com/tags/meta/</loc>
     <lastmod>2025-08-24T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>https://blog.johannescopeland.com/post/</loc>
     <lastmod>2025-08-24T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://blog.johannescopeland.com/tags/</loc>
     <lastmod>2025-08-24T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://blog.johannescopeland.com/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://blog.johannescopeland.com/categories/</loc>
   </url>
 </urlset>
