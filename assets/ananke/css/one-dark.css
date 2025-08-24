@@ -20,7 +20,10 @@
 
 /* Base */
 html, body { background-color: var(--bg); color: var(--text); }
-body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+/* Ensure font overrides Tachyons body classes like `avenir` */
+body,
+body.avenir { font-family: 'Fira Code', monospace !important; }
+body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-shadow: 0 0 3px rgba(171, 178, 191, 0.3); }
 
 /* Links */
 a { color: var(--link); }
