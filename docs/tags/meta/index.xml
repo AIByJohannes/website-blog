@@ -13,7 +13,7 @@
       <link>http://localhost:1313/2025/08/hello-world/</link>
       <pubDate>Sun, 24 Aug 2025 09:00:00 +0000</pubDate>
       <guid>http://localhost:1313/2025/08/hello-world/</guid>
-      <description>&lt;p&gt;Welcome to my personal blog. I’ll be writing about AI engineering, coding practices, and what I’m building. Stay tuned!&lt;/p&gt;</description>
+      <description>&lt;p&gt;Welcome to my personal blog. I’ll be writing about AI engineering, coding practices, and what I’m building. Stay tuned!&lt;/p&gt;&#xA;&lt;p&gt;My name is Johannes, and I am fascinated by many things. I love to go down rabbit holes and learn all there is to know about all kinds of subjects.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://miro.medium.com/v2/resize:fit:640/format:webp/1*HZKiBOhRWT0M6Tp_2X0dcg.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;One topic that fascinates me the most is AI.&lt;/p&gt;&#xA;&lt;p&gt;I remember Alpha Go beating the world champion like it was yesterday. I was watching YouTube when I stumbled across this breakthrough in deep reinforcement learning. An AI system had not only matched human performance, it had reached superhuman levels of performance.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
