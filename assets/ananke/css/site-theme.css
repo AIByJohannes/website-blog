@@ -45,6 +45,23 @@ h1, h2, h3, h4, h5, h6 { color: var(--heading); }
 .card, .panel, .ba.bg-white, .shadow-1, .shadow-2, .shadow-3, .shadow-4, .shadow-5,
 .post, .post-card, .mw7.center.bg-white, article.bg-white { background: var(--card) !important; color: var(--text) !important; border-color: var(--border) !important; }
 
+/* Single post card - padded, rounded, modern card style */
+article.post-card {
+  background: var(--card) !important;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 48rem) {
+  article.post-card {
+    padding: 2.5rem;
+  }
+}
+
 /* Borders */
 .ba, .bt, .br, .bb, .bl { border-color: var(--border) !important; }
 

@@ -23,7 +23,7 @@ publishDir = 'docs'
   # Use a dark background and light text via Tachyons utility classes
   body_classes = 'avenir bg-near-black near-white'
   # Load our custom dark stylesheet
-  custom_css = ['one-dark.css']
+  custom_css = ['site-theme.css']
 
   [params.ananke]
     # Show recent posts on the homepage
