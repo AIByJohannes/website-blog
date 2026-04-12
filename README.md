@@ -34,6 +34,29 @@ hugo new post/my-first-post.md
 ```
 Edit the file in `content/post/`, then set `draft: false` when ready to publish.
 
+## Private Draft Workflow
+
+The public Hugo repo stays public. Unpublished drafts live in the separate
+private `../content` repo and get promoted here only when they are ready.
+
+Author drafts in:
+
+```text
+../content/blog/drafts/<slug>.md
+../content/blog/assets/<slug>/...
+```
+
+Publish from the private repo:
+
+```bash
+cd ../content
+./publish-blog-post <slug>
+```
+
+That command copies the post into `content/post/`, copies any matching assets
+into `static/images/post/<slug>/`, runs `hugo --minify`, and leaves this repo as
+the public source of truth for published posts.
+
 ## Configure social links (Ananke)
 Add to `hugo.toml`:
 
