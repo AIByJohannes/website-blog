@@ -16,6 +16,18 @@ Badges: ![Hugo](https://img.shields.io/badge/Static%20Site-Hugo-ff4088?logo=hugo
 ## Quick start
 Prerequisites: Hugo Extended v0.128+ (recommended latest). Install: https://gohugo.io/installation/
 
+Clone with the theme submodule:
+
+```bash
+git clone --recurse-submodules <repo-url>
+```
+
+If you already cloned the repo without submodules:
+
+```bash
+git submodule update --init --recursive
+```
+
 Run locally:
 
 ```bash
@@ -25,8 +37,12 @@ hugo server -D
 Build for production (outputs to `docs/`):
 
 ```bash
-hugo --minify
+./scripts/build.sh
 ```
+
+The build script fails fast if the Ananke theme checkout is missing or if Hugo
+produces an empty `docs/index.html`, which helps avoid publishing a blank GitHub
+Pages homepage.
 
 ## Create a new post
 ```bash
@@ -75,7 +91,8 @@ Add to `hugo.toml`:
 ## Deployment (GitHub Pages)
 This repo publishes to `docs/` (see `publishDir` in `hugo.toml`).
 
-- Local build: `hugo --minify`
+- Initialize theme checkout first if needed: `git submodule update --init --recursive`
+- Local build: `./scripts/build.sh`
 - Commit and push the updated `docs/` folder
 - In GitHub: Settings → Pages → Deploy from a branch → select your default branch and `/docs`
 
