@@ -49,6 +49,15 @@ h1.athelas, h2.athelas, h3.athelas, h4.athelas, h5.athelas, h6.athelas {
 .card, .panel, .ba.bg-white, .shadow-1, .shadow-2, .shadow-3, .shadow-4, .shadow-5,
 .post, .post-card, .mw7.center.bg-white, article.bg-white { background: var(--card) !important; color: var(--text) !important; border-color: var(--border) !important; }
 
+/* Post header card - rounded box around title, author, date */
+.post-header-card {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 2rem;
+}
+
 /* Single post card - padded, rounded, modern card style */
 article.post-card {
   background: var(--card) !important;
