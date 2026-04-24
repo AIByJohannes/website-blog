@@ -37,4 +37,4 @@ publish slug:
 # ----------------------------------------------------------------------
 # Build and push to origin/main
 deploy:
-    ./scripts/build.sh && git add docs/ && git commit -m "Release: $(git rev-parse --short HEAD)" && git push
+    ./scripts/build.sh && git add docs/ assets/ layouts/ resources/_gen/ && git commit -m "Release: $(git rev-parse --short HEAD)" && git push
