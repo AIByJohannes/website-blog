@@ -30,7 +30,11 @@ a { color: var(--link); }
 a:hover, a:focus { color: var(--link-hover); }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 { color: var(--heading); }
+h1, h2, h3, h4, h5, h6,
+h1.athelas, h2.athelas, h3.athelas, h4.athelas, h5.athelas, h6.athelas {
+  color: var(--heading);
+  font-family: 'JetBrains Mono', 'JetBrains Mono Nerd Font', 'JetBrains Nerd Font', 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+}
 
 /* Common tachyons color utilities overridden for dark mode readability */
 .dark-gray, .mid-gray, .gray, .near-black, .black-80, .black-70 { color: var(--text) !important; }
